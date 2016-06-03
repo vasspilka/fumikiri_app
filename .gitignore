@@ -1,2 +1,4 @@
 /public/assets*
 /tmp
+db/fumikiri_app_development.sqlite3
+db/fumikiri_app_test.sqlite3

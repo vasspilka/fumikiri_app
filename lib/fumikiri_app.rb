@@ -16,6 +16,7 @@ Hanami::Model.configure do
   #    adapter type: :sql, uri: 'postgres://localhost/fumikiri_app_development'
   #    adapter type: :sql, uri: 'mysql://localhost/fumikiri_app_development'
   #
+  
   adapter type: :sql, uri: ENV['FUMIKIRI_APP_DATABASE_URL']
 
   ##
@@ -30,20 +31,9 @@ Hanami::Model.configure do
   # Intended for specifying application wide mappings.
   #
   # You can specify mapping file to load with:
-  #
-  # mapping "#{__dir__}/config/mapping"
-  #
-  # Alternatively, you can use a block syntax like the following:
-  #
-  mapping do
-    # collection :users do
-    #   entity     User
-    #   repository UserRepository
-    #
-    #   attribute :id,   Integer
-    #   attribute :name, String
-    # end
-  end
+
+  mapping "#{__dir__}/config/mapping"
+
 end.load!
 
 Hanami::Mailer.configure do

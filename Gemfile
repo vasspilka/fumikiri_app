@@ -9,6 +9,7 @@ gem 'hanami-model'
 gem 'sqlite3'
 
 group :test do
+  gem 'rspec-its'
   gem 'rspec'
   gem 'capybara'
 end
