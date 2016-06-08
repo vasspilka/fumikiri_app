@@ -5,6 +5,7 @@ gem 'rake'
 gem 'hanami'
 gem 'hanami-model'
 
+gem 'hanami-fumikiri', github: 'theCrab/hanami-fumikiri', branch: 'guest'
 
 gem 'sqlite3'
 

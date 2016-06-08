@@ -9,7 +9,6 @@ Hanami::Model.configure do
   # Available options:
   #
   #  * Memory adapter
-  #    adapter type: :memory, uri: 'memory://localhost/fumikiri_app_development'
   #
   #  * SQL adapter
   #    adapter type: :sql, uri: 'sqlite://db/fumikiri_app_development.sqlite3'
@@ -17,7 +16,8 @@ Hanami::Model.configure do
   #    adapter type: :sql, uri: 'mysql://localhost/fumikiri_app_development'
   #
   
-  adapter type: :sql, uri: ENV['FUMIKIRI_APP_DATABASE_URL']
+  ## This is a test app no need for real persistance
+  adapter type: :memory, uri: 'memory://localhost/fumikiri_app_development'
 
   ##
   # Migrations
